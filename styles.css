@@ -1,102 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap");
 
 :root {
-    --primary-color: #2C3930;
-    --secondary-color: #3F4F44;
-    --text-color: #A27B5C;
-    --link-color: #3D8D7A;
-    --bg-color: #FBFFE4;
-    --dark-bg-color: #DCD7C9;
-    --nav-link-color: #504B38;
-    --nav-hover-color: #ea8110;
+  --primary-color: #2c3930;
+  --secondary-color: #3f4f44;
+  --text-color: #a27b5c;
+  --link-color: #3d8d7a;
+  --bg-color: #fbffe4;
+  --dark-bg-color: #dcd7c9;
+  --nav-link-color: #504b38;
+  --nav-hover-color: #ea8110;
 }
 
 body {
-    background: var(--bg-color);
-    font-family: "Montserrat", sans-serif;
-    color: var(--text-color);
-    overflow-x: hidden;
+  background: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
 }
 
 header {
-    background-color: #DCD7C9;
+  background-color: #dcd7c9;
 }
 
 .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.6rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .logo {
-    height: 3rem;
-    width: 10rem;
-    border-radius: 15px;
-
+  height: 3rem;
+  width: 10rem;
+  border-radius: 15px;
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
-     border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 
 .navlist {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navlist li {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .navlist li a {
-    text-decoration: none;
-    color: var(--nav-link-color);
-    font-weight: 500;
-    font-size: 1rem;
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-link {
-    font-size: 0.8rem;
-    transition: transform 0.3s ease-in-out;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navlist li a.active {
-     color: var(--link-color);
+  color: var(--link-color);
 }
 
-.navlist li a:hover, .nav-link:hover {
-    color: var(--nav-hover-color) !important;
-    transform: scale(1.1);
+.navlist li a:hover,
+.nav-link:hover {
+  color: var(--nav-hover-color) !important;
+  transform: scale(1.1);
 }
 
 .hamburger-menu {
+  display: none;
+}
+
+/*hero-section*/
+
+.hero {
+  background-image: url(./assets/team.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  animation: slide-in 1s ease-out forwards;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text {
+  width: 50%;
+  padding: 2rem 1.5rem;
+}
+
+.hero-text h2 {
+  font-size: 3.5rem;
+  color: var(--bg-color);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2.5rem;
+}
+
+.hero-text h2 em {
+    font-style: normal;
+    color: var(--nav-hover-color);
+}
+
+.divider {
+    width: 5rem;
+    height: 0.2rem;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    margin-bottom: 2.5rem;
+}
+
+.hero-text p {
+    color: var(--bg-color);
+}
+
+@media (max-width: 990px){
+    .hero {
+        padding: 4rem;
+    }
+    .hero-text {
+        width: 90%;
+        text-align: center;
+    }
+    .hero-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    .divider {
+        margin: 1.2rem auto;
+    }
+}
+
+@media all and (max-width: 768px) {
+  .logo {
+    height: 1.8rem;
+    width: 6rem;
+  }
+  .navlist li a {
+    font-size: 0.8rem;
+  }
+  .divider {
+    width: 12rem;
+    height: 0.1rem;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .navlist {
     display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    margin: 0 1rem;
+  }
+  .divider, .hero-text p {
+    display: none;
+  }
 }
 
-@media all and (max-width: 768px){
-    .logo {
-        height: 1.8rem;
-        width: 6rem; 
-    }
-    .navlist li a {
-        font-size: 0.8rem;
-    }
-}
-
-@media all and (max-width: 560px){
-    .navlist {
-        display: none;
-    }
-    .hamburger-menu {
-        display: block;
-        margin: 0 1rem;
-    }
-}
