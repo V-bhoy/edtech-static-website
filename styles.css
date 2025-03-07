@@ -18,6 +18,18 @@ body {
   overflow-x: hidden;
 }
 
+.section-heading {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.section-heading h6 {
+   color: var(--nav-hover-color);
+}
+.section-heading>h4{
+    color: var(--secondary-color);
+}
+
 header {
   background-color: #dcd7c9;
 }
@@ -26,7 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
 
 .logo {
@@ -138,6 +150,40 @@ header {
     color: var(--bg-color);
 }
 
+/* services */
+
+.service-item {
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+    width: 95%;
+    height: 95%;
+    margin-bottom: 1rem;
+}
+
+.service-item i {
+    transition: all 0.5s;
+    float: right;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-left: 1rem;
+}
+
+.service-item i:hover {
+    margin-top: 1rem;
+}
+
+.service-item h4 {
+    font-size: 1.3rem;
+    font: 700;
+    margin-bottom: 1.25rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
 @media (max-width: 990px){
     .hero {
         padding: 4rem;
@@ -152,6 +198,9 @@ header {
     }
     .divider {
         margin: 1.2rem auto;
+    }
+    .service-item i {
+        font-size: 2rem;
     }
 }
 
