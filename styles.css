@@ -202,7 +202,6 @@ header {
 
 /* banner */
 
-
 .banner-container {
   background-image: url(./assets/banner.jpg);
   background-size: cover;
@@ -334,7 +333,7 @@ header {
 }
 
 .landing-form input,
-.landing-form select{
+.landing-form select {
   width: 100%;
   margin-bottom: 1rem;
   border: none;
@@ -459,7 +458,7 @@ header {
   justify-content: center;
 }
 
-.card-info .card{
+.card-info .card {
   transition: all 0.5s;
   color: var(--secondary-color);
   padding: 1rem;
@@ -473,17 +472,17 @@ header {
   transform: scale(1.05);
 }
 
-.card-info .card>i {
+.card-info .card > i {
   color: var(--nav-hover-color);
   font-size: 2vw;
 }
 
-.card-info .card>h4 {
+.card-info .card > h4 {
   color: var(--nav-link-color);
   font-size: 1.5vw;
   margin-bottom: 0.5rem;
 }
-.card-info .card>p {
+.card-info .card > p {
   font-size: 1vw;
   margin: 0;
   margin-bottom: 0.5rem;
@@ -491,11 +490,11 @@ header {
 }
 
 .contact-form {
-    background:var(--dark-bg-color);
-    padding: 1.8rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 1.5rem;
+  background: var(--dark-bg-color);
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 1.5rem;
 }
 
 .contact-form .row {
@@ -504,35 +503,35 @@ header {
 }
 
 .contact-form label {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus{
+.contact-form textarea:focus {
   outline: none;
-} 
+}
 
 .contact-form button {
-    background: var(--nav-hover-color);
-    color: #fff;
-    font-size: 0.8rem;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  background: var(--nav-hover-color);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
-    background: var(--text-color);
+  background: var(--text-color);
 }
 
 /* footer */
@@ -588,7 +587,6 @@ footer {
   }
 }
 
-
 @media all and (max-width: 768px) {
   .logo {
     height: 1.8rem;
@@ -608,45 +606,43 @@ footer {
   .landing-form .img-container {
     display: none;
   }
-    .landing-form label {
-  font-size: 2vw;
-  font-weight: 600;
-}
+  .landing-form label {
+    font-size: 2vw;
+    font-weight: 600;
+  }
 
-.landing-form input, .landing-form select {
+  .landing-form input,
+  .landing-form select {
+    font-size: 2vw;
+    margin-bottom: 0.8rem;
+  }
 
-  font-size: 2vw;
-  margin-bottom: 0.8rem;
-}
+  .card-info {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
 
-.card-info {
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
+  .card-info .card {
+    flex: 1;
+    height: 25vh;
+    top: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.card-info .card {
-  flex: 1;
-  height: 25vh;
-  top: -20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .card-info .card i {
+    font-size: 1.5rem;
+  }
 
-.card-info .card i {
-  font-size: 1.5rem;
-}
+  .card-info .card h4 {
+    font-size: 0.8rem;
+  }
 
-.card-info .card h4 {
-  font-size: 0.8rem;
-}
-
-.card-info .card p {
-  font-size: 0.5rem;
-}
-
-
+  .card-info .card p {
+    font-size: 0.5rem;
+  }
 }
 
 @media all and (max-width: 560px) {
