@@ -245,14 +245,15 @@
                 <h4>Create a Learning Plan</h4>
               </div>
               <form target="#">
-                <label>Your Name</label>
-                <input />
-                <label>Your Email</label>
-                <input />
-                <label>Learning area</label>
-                <input />
-                <label>Your Goal</label>
-                <select>
+                <label for="name">Your Name</label>
+                <input id="name" name="name" type="text" required/>
+                <label for="email">Your Email</label>
+                <input id="email" name="email" type="email" required/>
+                <label for="area">Learning area</label>
+                <input id="area" name="area" type="text" required/>
+                <label for="goal">Your Goal</label>
+                <select id="goal" name="goal" required>
+                  <option disabled selected>Select</option>
                   <option>Get a job</option>
                   <option>Upgrade skills</option>
                   <option>Learn as a hobby</option>
@@ -269,7 +270,7 @@
       <div class="row testimonials" id="testimonials">
         <div class="col-12">
           <div class="section-heading">
-            <h6>Testiomonials</h6>
+            <h6>Testimonials</h6>
             <h4>What our students say</h4>
           </div>
         </div>
@@ -378,7 +379,87 @@
       </div>
     </div>
     <!--Contact Us-->
-    <!--Inquiry Form-->
+    <div class="container-fluid-md">
+      <section class="row" id="contact">
+        <div class="col-12">
+          <div class="section-heading">
+            <h6>Contact Us</h6>
+            <h4>Let us connect</h4>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224097.62385181244!2d76.92842192632658!3d28.64398387980132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1741418470841!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col-12 col-md-6 card-info">
+          <div class="card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email Us</h4>
+            <p>easlern.tech@easlearn.com</p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Contact No</h4>
+            <p>+91 1234575676</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-location"></i>
+            <h4>Located At</h4>
+            <p>New Delhi</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="section-heading">
+            <h4>Feel free to inquire about our coding courses!</h4>
+             <form action="#" class="contact-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="contact">Contact</label>
+                        <input id="contact" name="contact" type="tel" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" class="form-control" required>
+                    </div>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+
+                <button type="submit" class="btn btn-primary mt-3 w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
     <!--Footer-->
+    <footer class="container-fluid">
+      <div class="footer-content">
+        <p>Copyright &copy; 2024 Easlearn tech co. ltd. All Rights Reserved</p>
+        <p>
+          Designed by
+          <em>Easlearn Tech</em>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
