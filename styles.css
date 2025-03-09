@@ -648,6 +648,20 @@ footer {
   .contact-form{
     padding: 1.8rem 0.8rem;
   }
+
+    .testimonial-card{
+    position: relative;
+    margin-top: 10%;
+  }
+
+  .testimonial-card .img-container {
+    position: absolute;
+    right: 3%;
+    top: -15%;
+    width: 20%;
+    height: 35%;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -665,4 +679,5 @@ footer {
   .course-list li {
     flex-direction: column;
   }
+
 }
