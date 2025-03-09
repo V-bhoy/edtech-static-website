@@ -48,7 +48,7 @@ A simple contact form for inquiries.
 
 Contains copyright information.
 
-# There are other sections too, for more descriptive features of the website
+- **There are other sections too, for more descriptive features of the website !**
 
 ---
 
